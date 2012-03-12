@@ -1,0 +1,13 @@
+term.write("Password: ")
+local pass = read("*")
+term.write("Confirm: ")
+local passC = read("*")
+
+if pass == passC then
+	local fh = fs.open("/_ftppasswd", "w")
+	fh.write(pass)
+	fh.close()
+	print("Password set!")
+else
+	print("Passwords do not match!")
+end
