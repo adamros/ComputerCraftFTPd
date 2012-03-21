@@ -24,8 +24,8 @@ public class mod_CCFTP extends BaseModMp {
 	public static String default_world = "world";
 
 	@Override
-	public void ModsLoaded() {
-		super.ModsLoaded();
+	public void modsLoaded() {
+		super.modsLoaded();
 
 		new Thread() {
 			public void run() {
@@ -81,10 +81,10 @@ public class mod_CCFTP extends BaseModMp {
 	}
 
 	@Override
-	public void HandlePacket(Packet230ModLoader packet230ModLoader, EntityPlayer entityPlayer) { }
+	public void handlePacket(Packet230ModLoader packet230ModLoader, EntityPlayer entityPlayer) { }
 
 	@Override
-	public void HandleLogin(EntityPlayer entityPlayer) { }
+	public void handleLogin(EntityPlayer entityPlayer) { }
 
 	@Override
 	public boolean hasClientSide() {
