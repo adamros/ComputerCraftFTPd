@@ -1,3 +1,6 @@
+Modifications, porting code to Forge and FML was made by adamros
+Licensed under the same terms as the original files (see the below text of the license)
+
 All files of ComputerCraftFTPd are subject to this license:
 ComputerCraftFTPd Copyright (c) Doridian
 All rights reserved.

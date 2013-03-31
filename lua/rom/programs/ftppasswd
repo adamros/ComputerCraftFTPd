@@ -1,6 +1,9 @@
+print("#############################")
+print("#### CCFTP Configuration ####")
+print("#############################")
 term.write("Password: ")
 local pass = read("*")
-term.write("Confirm: ")
+term.write("Confirm password: ")
 local passC = read("*")
 
 if pass == passC then

@@ -1,6 +1,6 @@
 package de.doridian.ccftp;
 
-import net.minecraft.server.mod_CCFTP;
+
 import org.apache.ftpserver.ftplet.Authentication;
 import org.apache.ftpserver.ftplet.AuthenticationFailedException;
 import org.apache.ftpserver.ftplet.Authority;
@@ -10,6 +10,8 @@ import org.apache.ftpserver.ftplet.User;
 import org.apache.ftpserver.ftplet.UserManager;
 import org.apache.ftpserver.usermanager.AnonymousAuthentication;
 import org.apache.ftpserver.usermanager.UsernamePasswordAuthentication;
+
+import adamros.ccftp.BaseCCFTP;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -85,7 +87,8 @@ public class CCUserManager implements UserManager {
 
 		private CCUser(String worldName, int computerID) {
 			if(worldName == null || worldName.isEmpty()) {
-				worldName = mod_CCFTP.default_world;
+				//Forge port change
+				worldName = BaseCCFTP.instance.defaultWorld;
 			}
 
 			this.username = worldName + "." + computerID;

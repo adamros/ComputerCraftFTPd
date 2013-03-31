@@ -14,7 +14,7 @@ public class ComputerCraftFTP {
 		ListenerFactory factory = new ListenerFactory();
 
 		//set the host and port of the listener
-		if(bindAddress != null && !bindAddress.isEmpty())
+		if(bindAddress != null && !bindAddress.isEmpty() && bindAddress != ("0.0.0.0".trim()))
 			factory.setServerAddress(bindAddress);
 
 		factory.setPort(port);
