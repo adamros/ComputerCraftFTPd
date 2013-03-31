@@ -1,0 +1,16 @@
+ComputerCraftFTP (CCFTP)
+------------------------------------------------------------------------------------------
+
+CCFTP is easy to configure and use FTP server for ComputerCraft.
+Now you can upload your LUA scripts directly to your computer (or turtle) on server.
+
+
+Licenses
+-----------------------------------
+See LICENSE files.
+
+
+Credits
+-----------------------------------
+Original mod and ftppasswd script: Doridian
+Porting to Forge/FML, support for custom IP check script: adamros
